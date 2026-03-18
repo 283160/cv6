@@ -21,4 +21,11 @@ def has_intersection(circle_1, circle_2):
     elif d < radius:
         slo["intersects"] = True
         slo["intersections_count"] = 2
-    elif math.isclose(d, radius)
+    elif math.isclose(d, radius):
+        slo["intersects"] = True
+        slo["intersections_count"] = 1
+    else:
+        print("Nesprávné zadání kružnic")
+    return slo
+
+
