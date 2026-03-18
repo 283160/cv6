@@ -10,10 +10,12 @@ def euclid_distance(x1, y1, x2, y2): #euklidovská vzdálenost
 
 def has_intersection(circle_1, circle_2):
     slo = {"intersects": False, "intersections_count": 0}
-    x1, y1 = circle_1['center']
-    r1 = circle_1['radius']
-    x2, y2 = circle_2['center']
-    r2 = circle_2['radius']
+    x1 = circle_1['x']
+    y1 = circle_1['y']
+    r1 = circle_1['r']
+    x2 = circle_2['x']
+    y2 = circle_2['y']
+    r2 = circle_2['r']
     d = euclid_distance(x1, y1, x2, y2)
     radius = radius_sum(r1, r2)
     if d > radius:

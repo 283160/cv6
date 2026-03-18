@@ -1,5 +1,5 @@
-circle_1 = {"x": 0, "y": 0, "r": 2}
-circle_2 = {"x": 3, "y": 0, "r": 1}
+circle_1 = {"x": 8, "y": 3, "r": 2}
+circle_2 = {"x": 3, "y": 6, "r": 10}
 
 from circles_stats import has_intersection
 prunik = has_intersection(circle_1, circle_2)
